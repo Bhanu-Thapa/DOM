@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Click</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        font-size: 50px;
+        padding: 15px;
+        background-color: rgb(4, 216, 4);
+        color: #fff;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Double Click Me 👆</button>
+    <script>
+      let btn = document.querySelector('button');
+      btn.addEventListener('dblclick', clic);
+      function clic() {
+        alert('You Double Click The Button 🤗');
+      }
+    </script>
+  </body>
+</html>
