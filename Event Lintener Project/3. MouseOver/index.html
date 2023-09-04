@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Double Click</title>
+    <title>MouseOver</title>
     <style>
       body {
         height: 100vh;
@@ -21,12 +21,12 @@
     </style>
   </head>
   <body>
-    <button>Double Click Me 👆</button>
+    <button>MouseOver Me 👆</button>
     <script>
       let btn = document.querySelector('button');
-      btn.addEventListener('dblclick', clic);
+      btn.addEventListener('mouseover', clic);
       function clic() {
-        alert('You Double Click The Button 🤗');
+        btn.innerText = 'Hover The Button 🤗';
       }
     </script>
   </body>
