@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>keydown and keyup</title>
+  </head>
+  <body>
+    <p></p>
+
+    <script>
+      let txt = document.querySelector('body');
+      let p = document.querySelector('p');
+      txt.addEventListener('keydown', kd);
+      function kd(e) {
+        p.style.fontSize = '30px';
+        p.style.color = 'green';
+        p.innerText = `key down ${e.key} `;
+      }
+      txt.addEventListener('keyup', ku);
+      function ku(e) {
+        p.style.fontSize = '30px';
+        p.style.color = 'red';
+        p.innerText = `key up ${e.key} `;
+      }
+    </script>
+  </body>
+</html>

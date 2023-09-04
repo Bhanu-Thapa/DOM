@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>onclick</title>
+    <title>MouseOver</title>
     <style>
       body {
         height: 100vh;
@@ -21,12 +21,18 @@
     </style>
   </head>
   <body>
-    <button>Click Me 👆</button>
+    <button>Hover Me 👆</button>
     <script>
       let btn = document.querySelector('button');
-      btn.addEventListener('click', clic);
+
+      btn.addEventListener('mouseover', clic);
       function clic() {
-        alert('You Click The Button 🤗');
+        btn.innerText = 'MouseOver 🤗';
+      }
+
+      btn.addEventListener('mouseout', cli);
+      function cli() {
+        btn.innerText = 'MouseOut 🤗';
       }
     </script>
   </body>

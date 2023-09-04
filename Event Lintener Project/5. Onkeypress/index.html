@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnKey Press</title>
+  </head>
+  <body>
+    <input type="text" />
+    <p></p>
+
+    <script>
+      let txt = document.querySelector('input');
+      let p = document.querySelector('p');
+      txt.addEventListener('keypress', kp);
+      function kp(e) {
+        p.innerText = `You Press ${e.key} `;
+      }
+    </script>
+  </body>
+</html>
